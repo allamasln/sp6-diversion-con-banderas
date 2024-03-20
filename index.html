@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restcountries App</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <h1>Información sobre Países</h1>
-  <div id="countries-list"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Restcountries App</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<h1>Información sobre Países</h1>
+		<div>
+			<ul id="countries-list"></ul>
 
-  <script src="./js/script.js"></script>
-</body>
+			<div class="modal hidden">
+				<div class="country-details">
+					<img src="https://flagcdn.com/w320/td.png" alt="" />
+
+					<div>
+						<h3>Chad</h3>
+						<p>Capital: Esto</p>
+						<p>Capital: Esto</p>
+						<p>Capital: Esto</p>
+					</div>
+				</div>
+				<button>Cerrar</button>
+			</div>
+			<div class="overlay hidden"></div>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
 </html>

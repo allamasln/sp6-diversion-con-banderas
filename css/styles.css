@@ -1,10 +1,73 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
 }
 
 h1 {
-  color: #333;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 1rem;
+}
+button {
+	cursor: pointer;
+}
+.country {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	flex-basis: 200px;
+}
+
+img {
+	border-radius: 5px;
+	width: 250px;
+	height: 150px;
+	object-fit: cover;
+}
+.modal {
+	position: fixed;
+	top: calc(50vh - 125px);
+	left: calc(50vw - 250px);
+	width: 500px;
+	height: 250px;
+	z-index: 2;
+	padding: 2rem;
+	background-color: white;
+}
+
+.country-details {
+	display: flex;
+	gap: 1rem;
+}
+
+.overlay {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	opacity: 0.8;
+}
+
+.hidden {
+	display: none;
 }
